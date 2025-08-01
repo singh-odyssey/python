@@ -17,7 +17,7 @@ Welcome to my Python Practice repository! This space is dedicated to learning an
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/python-practice.git
+    git clone https://github.com/singh-odyssey/python-practice.git
     ```
 2. Checkout any branch to see specific practice code:
     ```bash
