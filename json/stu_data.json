@@ -1,0 +1,149 @@
+[
+  {
+    "student_id": 1,
+    "name": {
+      "first": "Alice",
+      "last": "Johnson"
+    },
+    "age": 20,
+    "email": "alice.johnson@university.edu",
+    "enrolled_courses": [
+      {
+        "course_name": "Full Stack Development",
+        "course_code": "CS401",
+        "credits": 4,
+        "grades": {
+          "assignments": 95,
+          "midterm": 88,
+          "final": 92
+        }
+      },
+      {
+        "course_name": "AI/Machine Learning",
+        "course_code": "CS502",
+        "credits": 4,
+        "grades": {
+          "assignments": 90,
+          "midterm": 85,
+          "final": 89
+        }
+      },
+      {
+        "course_name": "Cloud Computing",
+        "course_code": "CS303",
+        "credits": 3,
+        "grades": {
+          "assignments": 98,
+          "midterm": 94,
+          "final": 96
+        }
+      }
+    ],
+    "address": {
+      "street": "123 Bay Street",
+      "city": "San Francisco",
+      "state": "California",
+      "zip": 94102
+    },
+    "emergency_contact": {
+      "name": "Robert Johnson",
+      "relationship": "Father",
+      "phone": "+1-555-0101"
+    },
+    "is_active": true,
+    "graduation_year": 2026
+  },
+  {
+    "student_id": 2,
+    "name": {
+      "first": "Bob",
+      "last": "Martinez"
+    },
+    "age": 22,
+    "email": "bob.martinez@university.edu",
+    "enrolled_courses": [
+      {
+        "course_name": "Database Systems",
+        "course_code": "CS201",
+        "credits": 3,
+        "grades": {
+          "assignments": 87,
+          "midterm": 82,
+          "final": 85
+        }
+      },
+      {
+        "course_name": "Web Security",
+        "course_code": "CS405",
+        "credits": 4,
+        "grades": {
+          "assignments": 92,
+          "midterm": 89,
+          "final": 91
+        }
+      }
+    ],
+    "address": {
+      "street": "456 Market Avenue",
+      "city": "Oakland",
+      "state": "California",
+      "zip": 94607
+    },
+    "emergency_contact": {
+      "name": "Maria Martinez",
+      "relationship": "Mother",
+      "phone": "+1-555-0202"
+    },
+    "is_active": true,
+    "graduation_year": null
+  },
+  {
+    "student_id": 3,
+    "name": {
+      "first": "Carol",
+      "last": "Chen"
+    },
+    "age": 23,
+    "email": "carol.chen@university.edu",
+    "enrolled_courses": [
+      {
+        "course_name": "Data Structures",
+        "course_code": "CS101",
+        "credits": 4,
+        "grades": {
+          "assignments": 100,
+          "midterm": 97,
+          "final": 98
+        }
+      },
+      {
+        "course_name": "Mobile App Development",
+        "course_code": "CS450",
+        "credits": 3,
+        "grades": {
+          "assignments": 93,
+          "midterm": 90,
+          "final": 94
+        }
+      },
+      {
+        "course_name": "DevOps Engineering",
+        "course_code": "CS510",
+        "credits": 4,
+        "grades": {
+          "assignments": 88,
+          "midterm": 91,
+          "final": 87
+        }
+      }
+    ],
+    "address": {
+      "street": "789 Telegraph Road",
+      "city": "Berkeley",
+      "state": "California",
+      "zip": 94704
+    },
+    "is_active": false,
+    "graduation_year": 2025
+  }
+]
