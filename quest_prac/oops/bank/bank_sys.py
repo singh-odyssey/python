@@ -22,8 +22,11 @@ class Account:
         return total_balance
 
     def account_details(self):
-
-        return [self.account_num, self.holder_name, self.balance]
+        return {
+            "account_number": self.account_num,
+            "holder_name": self.holder_name,
+            "balance": self.balance,
+        }
 
     @property
     def balance(self):
@@ -38,12 +41,27 @@ class SavingAccount(Account):
 
 class CurrentAccount(Account):
     def withdraw(self, amount: int):
+        if amount < 0:
+            return "Enter valid amount"
+
         if amount <= self.balance:
             return super().withdraw(amount)
         else:
-            return [super().withdraw(amount),"overdraft occured "]
-
+            # Access Account's private balance for overdraft behavior.
+            self._Account__balance -= amount
+            return "amount withdraw successful with overdraft"
 
 
 class Bank:
- ...
+    def __init__(self):
+        self.accounts: dict[int, Account] = {}
+
+    def add_account(self, account: Account):
+        self.accounts[account.account_num] = account
+
+    def get_account_details(self, account_num: int):
+        account = self.accounts.get(account_num)
+        if account is None:
+            return "Account not found"
+
+        return account.account_details()
